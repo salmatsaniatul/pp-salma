@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- SEO  -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portofolio pribadi Salma Tsaniatul" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portofolio: Salma Tsaniatul" />
+    <meta property="og:image" content="assets/img/salma.jpg" />
+    <title>Portofolio Salma Tsaniatul</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+    HEADER
+    Berisi <header> dan navigasi. Hanya satu <h1> di seluruh dokumen.
+    Komentar ini adalah bagian dari "laporan" untuk menjelaskan blok.
+  -->
+    <header class="site-header" role="banner">
+      <div class="container">
+        <!-- H1 wajib (judul utama, hanya 1 kali) -->
+        <h1 id="site-title">Salma Tsaniatul Munawaroh</h1>
+
+        <!-- Informasi ringkas (tabindex=0 sebagai elemen informatif yang dapat di-focus) -->
+        <div class="sr-summary" tabindex="0" aria-label="Ringkasan singkat">
+          <p>Junior Web Developer</p>
+        </div>
+
+        <!-- NAV -->
+        <nav aria-labelledby="site-title" class="main-nav">
+          <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#education">Riwayat</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="lat_css.html">Laporan Tugas</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+    MAIN
+    Semua konten utama ditempatkan di <main>.
+  -->
+    <main id="main" class="site-main" role="main">
+      <!--
+      ABOUT SECTION
+      Memuat <section> dan <article> untuk struktur.
+      Menyertakan <img> dengan alt meaningful.
+    -->
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container">
+          <article>
+            <h2 id="about-title">Tentang Saya</h2>
+            <!-- Foto diri -->
+            <img src="assets/img/salma.jpg" alt="Foto Salma " width="160" height="160" />
+
+            <!-- Deskripsi singkat -->
+            <p>Halo, saya <strong>Salma Tsaniatul Munawaroh</strong>.
+Saya adalah lulusan SMK Negeri 4 Tasikmalaya dari jurusan Pengembangan Perangkat Lunak dan Gim. Harus saya akui, awalnya jurusan ini bukan passion utama, lebih karena mengikuti alur. Namun, proses di SMK mengajarkan saya banyak hal berharga tentang bertahan, tanggung jawab, dan menyelesaikan apa yang sudah dimulai.
+Sekarang saya melanjutkan pendidikan di Universitas Mayasari Bakti dengan prodi Informatika jurusan yang awalnya juga bukan keinginan saya. Meski begitu, saya berharap di perkuliahan ini saya bisa lebih serius, belajar dengan lebih sadar, dan menemukan arah baru yang benar-benar cocok untuk saya.</p>
+          </article>
+        </div>
+      </section>
+
+      <!--
+      Pendidikan / Pengalaman (Tabel)
+      Menggunakan <table>, <caption>, <thead>, <tbody>, <tfoot> dan minimal satu colspan.
+      Komentar: tfoot diberi satu cell dengan colspan untuk catatan ringkas.
+    -->
+      <section id="education" class="section education" aria-labelledby="education-title">
+        <div class="container">
+          <h2 id="education-title">Riwayat Pendidikan / Pengalaman</h2>
+
+          <table class="history-table" summary="Tabel riwayat pendidikan dan pengalaman Salma">
+            <caption>
+              Riwayat Pendidikan & Pengalaman
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Periode</th>
+                <th scope="col">Institusi / Peran</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
+
+            <tbody>
+               <tr>
+                <td><time datetime="2012-2019">2012-2019</time></td>
+                <td>SDN 1 PURBARATU</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><time datetime="2019-2022">2019-2022</time></td>
+                <td>MTS MU'MIN MA'SHUM</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><time datetime="2022-2025">2022 - 2025</time></td>
+                <td>SMKN 4 Tasikmalaya</td>
+                <td>jurusan Pengembangan Perangkat Lunak dan Gim</td>
+              </tr>
+              <tr>
+                <td><time datetime="2025">2025</time></td>
+                <td>PKL - Perpustakaan Universitas Siliwangi</td>
+                <td>Saya bertugas di layanan sirkulasi dengan melayani peminjaman, pengembalian, dan perpanjangan masa pinjam buku. Selain itu, saya membantu pemustaka mencari koleksi melalui OPAC, merapikan buku ke rak sesuai nomor klasifikasi, mengerjakan pengolahan CD skripsi jika diperlukan, serta melakukan restorasi ringan pada buku. Saya juga terlibat dalam pembuatan aplikasi CABAPUS sebagai catatan barang perpustakaan.</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <!-- colspan minimal satu digunakan di sini untuk catatan ringkas -->
+              <tr>
+                <td colspan="3">Catatan: Riwayat dapat diperbarui sesuai pengalaman terbaru.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <!--
+      SKILL (Daftar)
+      Menampilkan <ul> dan <dl>/<dt>/<dd> sebagai variasi.
+      Komentar: description list membantu menjelaskan level/penjelasan skill.
+    -->
+      <section id="skills" class="section skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">Daftar Keahlian</h2>
+
+          <!-- Unordered list sederhana -->
+           <p class="skill-note">
+  Berikut adalah beberapa keahlian yang pernah saya pelajari saat SMK. Meski belum sepenuhnya saya kuasai, saya memiliki dasar pemahaman dan sedang berusaha memperdalamnya.
+</p>
+          <ul class="skill-list" aria-describedby="skill-desc">
+            <li>HTML5</li>
+            <li>CSS</li>
+             <li>Python</li>
+            <li>UI/UX Design</li>
+             <li>JavaScript</li>
+            <li>Nuxt</li>
+            <li>Bootstrap</li>
+          </ul>
+
+
+
+          <!-- Description list untuk detil skill -->
+          <dl class="skill-desc">
+            <!-- html5 -->
+            <div>
+              <dt>HTML5</dt>
+              <dd>Memahami struktur dokumen & elemen semantik</dd>
+            </div>
+
+            <!-- CSS -->
+            <div>
+              <dt>CSS</dt>
+              <dd>Menguasai styling dasar hingga layout responsif</dd>
+            </div>
+
+            <!-- UI/UX -->
+            <div>
+              <dt>UI/UX</dt>
+              <dd>Mendesain antarmuka sederhana & prototyping di Figma</dd>
+            </div>
+          </dl>
+          <p class="skill-note">
+  Catatan: Keahlian di atas merupakan hasil pembelajaran selama SMK. Saya masih dalam proses belajar dan pengembangan lebih lanjut.
+</p>
+
+        </div>
+      </section>
+
+      <!--
+      PROJECTS (Karya)
+      Harus memuat gambar atau embed YouTube <iframe> dan link target="_blank"
+      Komentar: setiap kartu projek memuat gambar (placeholder) + link eksternal.
+    -->
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">Karya / Projek</h2>
+
+          <div class="projects-grid">
+            <!-- Project 1: dengan gambar + link -->
+            <article class="project-card">
+              <img src="assets/img/face-presensi.png" alt="Tangkapan layar Face Presensi" width="320" height="180" />
+              <h3>Face Presensi</h3>
+              <p>Aplikasi presensi menggunakan deteksi wajah.</p>
+              <p><a href="https://face-presensi.netlify.app/" target="_blank" rel="noopener">Lihat proyek</a></p>
+            </article>
+
+             <!-- Project 1: dengan gambar + link -->
+            <article class="project-card">
+              <img src="assets/img/website-smk.png" alt="Tangkapan layar Face Presensi" width="320" height="180" />
+              <h3>Website SMKN 4</h3>
+              <p>Website SMKN 4 Tasikmalaya adalah proyek berbasis web yang dikembangkan sebagai bagian dari Uji Kompetensi (Ujikom).</p>
+              <p><a href="https://website-sekolah-flame.vercel.app/" target="_blank" rel="noopener">Lihat proyek</a></p>
+            </article>
+
+            <!-- Project 2: embed YouTube (iframe) sebagai multimedia -->
+            <article class="project-card">
+              <div class="video-wrap" aria-hidden="false">
+                <!-- YouTube iframe (contoh) -->
+                <iframe
+                  width="320"
+                  height="180"
+                  src="https://www.youtube.com/embed/kxyA1H74RSY?si=x4bhKmLvu8T8ws1a"
+                  title="Demo projek"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>Face Presensi Demo</h3>
+              <p>Video demo penggunaan aplikasi perpustakaan digital.</p>
+              <p><a href="https://face-presensi.netlify.app/" target="_blank" rel="noopener">Kunjungi proyek</a></p>
+            </article>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <!--
+      MULTIMEDIA
+      Menyediakan <video controls> sesuai syarat "minimal salah satu".
+      Komentar: source video adalah placeholder, bisa diganti path file MP4 lokal.
+    -->
+      <section id="multimedia" class="section multimedia" aria-labelledby="multimedia-title">
+        <div class="container">
+          <h2 id="multimedia-title">Multimedia</h2>
+
+          <!-- Video (contoh) -->
+          <video controls width="640" aria-describedby="video-desc">
+            <source src="assets/vid/contoh.mp4" type="video/mp4" />
+            <!-- Teks untuk browser yang tidak mendukung video -->
+            Browser Anda tidak mendukung elemen video.
+          </video>
+          <p id="video-desc" class="visually-hidden">Video demo singkat projek.</p>
+        </div>
+      </section>
+
+      <!--
+      CONTACT (Form lengkap)
+      Harus berisi: nama, email, nomor, textarea pesan, checkbox persetujuan, radio jenis kontak,
+      fieldset + legend, validasi (required, minlength, maxlength).
+      Komentar: setiap input memiliki label dan aria-describedby untuk aksesibilitas.
+    -->
+      <aside id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Form Kontak</h2>
+
+          <form action="" method="post" novalidate aria-describedby="contact-note">
+            <p id="contact-note" class="visually-hidden">Formulir untuk menghubungi Salma.</p>
+
+            <fieldset>
+              <legend>Informasi Kontak</legend>
+
+              <!-- Nama -->
+              <div class="form-row">
+                <label for="name">Nama Lengkap</label>
+                <input id="name" name="name" type="text" required minlength="2" maxlength="80" aria-describedby="name-help" />
+                <small id="name-help">Masukkan nama lengkap (min 2 karakter).</small>
+              </div>
+
+              <!-- Email -->
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required aria-describedby="email-help" />
+                <small id="email-help">Gunakan format email yang valid.</small>
+              </div>
+
+              <!-- Nomor -->
+              <div class="form-row">
+                <label for="phone">Nomor Telepon</label>
+                <input id="phone" name="phone" type="tel" required pattern="^[0-9+ \-()]{6,20}$" aria-describedby="phone-help" />
+                <small id="phone-help">Angka saja, bisa menyertakan + atau - (6–20 karakter).</small>
+              </div>
+
+              <!-- Jenis kontak (radio) -->
+        
+                <legend>Jenis Kontak</legend>
+                <div>
+                  <input type="radio" id="kontak-saran" name="jenis" value="saran" required />
+                  <label for="kontak-saran">Saran</label>
+                </div>
+                <div>
+                  <input type="radio" id="kontak-pertanyaan" name="jenis" value="pertanyaan" />
+                  <label for="kontak-pertanyaan">Pertanyaan</label>
+                </div>
+              
+
+              <!-- Pesan -->
+              <div class="form-row">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" aria-describedby="message-help"></textarea>
+                <small id="message-help">Tuliskan pesan (minimal 10 karakter).</small>
+              </div>
+
+              <!-- Persetujuan (checkbox) -->
+              <div class="form-row">
+                <input type="checkbox" id="agree" name="agree" required />
+                <label for="agree">Saya menyetujui data saya diproses untuk keperluan kontak.</label>
+              </div>
+
+              <!-- Submit -->
+              <div class="form-row">
+                <button type="submit" class="btn">Kirim</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <!--
+    FOOTER
+    Menyertakan informasi hak cipta dan link ke sosial (contoh).
+  -->
+    <footer class="site-footer" role="contentinfo" aria-label="Footer">
+      <div class="container">
+        <p>&copy; <time datetime="2025">2025</time> Salma Tsaniatul </p>
+        <p><a href="#site-title">Kembali ke atas</a></p>
+      </div>
+    </footer>
+
+    <!--
+    Catatan laporan:
+    - Semua blok di atas diberi komentar untuk menjelaskan tujuan/aksesibilitas/struktur.
+    - Gambar/video adalah placeholder: ganti src dengan file aktual saat deploy.
+  --></body>
+</html>
+

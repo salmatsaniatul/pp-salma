@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Formulir Pendaftaran</h2>
+    <form>
+      <!-- Nama Depan & Belakang -->
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="namaDepan">Nama Depan</label>
+          <input type="text" id="namaDepan" class="form-input" placeholder="Tulis nama depan" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="namaBelakang">Nama Belakang</label>
+          <input type="text" id="namaBelakang" class="form-input" placeholder="Tulis nama belakang" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" class="form-input" placeholder="email@contoh.com" required>
+        <div class="error-text">Email tidak valid</div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input type="password" id="password" class="form-input" placeholder="Password" required>
+      </div>
+
+      <!-- Jenis Kelamin -->
+      <div class="form-group">
+        <p class="form-label">Jenis Kelamin:</p>
+        <input type="radio" id="pria" name="gender" value="laki-laki">
+        <label for="pria">Laki-laki</label>
+        <input type="radio" id="wanita" name="gender" value="perempuan">
+        <label for="wanita">Perempuan</label>
+      </div>
+
+      <!-- Hobi -->
+      <div class="form-group">
+        <p class="form-label">Hobi:</p>
+        <input type="checkbox" id="baca" name="hobi" value="membaca">
+        <label for="baca">Healing</label>
+        <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+        <label for="olahraga">Olahraga</label>
+      </div>
+
+      <!-- Kota -->
+      <div class="form-group">
+        <label class="form-label" for="kota">Kota</label>
+        <select id="kota" name="kota" class="form-select" required>
+          <option value="">-- Pilih Kota --</option>
+          <option value="jakarta">Jakarta</option>
+          <option value="bandung">Bandung</option>
+          <option value="tasikmalaya">Tasikmalaya</option>
+        </select>
+      </div>
+
+      <!-- Umur -->
+      <div class="form-group">
+        <label class="form-label" for="umur">Umur</label>
+        <input type="number" id="umur" class="form-input" min="1" max="100" step="1" placeholder="Isi umur">
+      </div>
+
+      <!-- Tanggal Lahir -->
+      <div class="form-group">
+        <label class="form-label" for="tanggal">Tanggal Lahir</label>
+        <input type="date" id="tanggal" class="form-input">
+      </div>
+
+      <!-- Upload File -->
+      <div class="form-group">
+        <label class="form-label" for="file">Upload File</label>
+        <input type="file" id="file" class="form-input" accept=".jpg,.png,.pdf">
+      </div>
+
+      
+      
+
+      <!-- Tombol -->
+      <div class="form-group">
+        <button type="submit" class="form-button">Daftar</button>
+        <button type="reset" class="form-button hapus">Hapus</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
